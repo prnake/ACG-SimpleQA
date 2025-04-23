@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="ACG-SimpleQA: A Chinese ACG Domain Knowledge Question Answering Dataset">
+  <meta property="og:title" content="ACG-SimpleQA"/>
+  <meta property="og:description" content="A Chinese ACG Domain Knowledge Question Answering Dataset"/>
+  <meta property="og:url" content="https://huggingface.co/datasets/Papersnake/ACG-SimpleQA"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/ACG-SimpleQA.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="ACG-SimpleQA">
+  <meta name="twitter:description" content="A Chinese ACG Domain Knowledge Question Answering Dataset">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/ACG-SimpleQA.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="ACG, SimpleQA, Chinese, Question Answering, Dataset">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ACG-SimpleQA</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">ACG-SimpleQA</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/prnake" target="_blank">Papersnake</a>
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/Papersnake/ACG-SimpleQA" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Dataset link -->
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/Papersnake/ACG-SimpleQA" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="static/images/hf-logo.png" alt="Hugging Face Logo" style="width: 20px; height: 20px;"/>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leaderboard Visualization -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/leaderboard.png" alt="ACG-SimpleQA Leaderboard" style="width: 100%;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Dataset Description -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">About ACG-SimpleQA</h2>
+          <div class="content has-text-justified">
+            <p>
+              ACG-SimpleQA is an objective knowledge question-answering dataset focused on the Chinese ACG (Animation, Comic, Game) domain, containing 4,242 carefully designed QA samples. This benchmark aims to evaluate large language models' factual capabilities in the ACG culture domain.
+            </p>
+            <h3 class="title is-4">Key Features</h3>
+            <ul>
+              <li>🀄<strong>Chinese:</strong> Focuses on Chinese ACG knowledge, providing a thorough evaluation of LLMs' factual abilities in this area.</li>
+              <li>🍀<strong>Diversity:</strong> Covers multiple subdomains such as anime, games, manga, and music, ensuring comprehensive assessment.</li>
+              <li>⚡<strong>High Quality:</strong> Strict quality control ensures the accuracy of questions and answers.</li>
+              <li>💡<strong>Static:</strong> All reference answers are time-invariant, and the knowledge cutoff is before 2024, ensuring long-term validity.</li>
+              <li>🗂️<strong>Easy Evaluation:</strong> The evaluation method is consistent with <a href="https://github.com/openai/simple-evals" target="_blank">SimpleQA</a> and <a href="https://github.com/OpenStellarTeam/ChineseSimpleQA" target="_blank">ChineseSimpleQA</a>.</li>
+            </ul>
+            <h3 class="title is-4">Data Sources</h3>
+            <ul>
+              <li>Approximately 99% of samples are from "Moegirlpedia" (萌娘百科), which provides authoritative and rich background information on ACG works.</li>
+              <li>For some niche works or special settings, we reference other authoritative websites to ensure sample completeness and accuracy.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Motivation -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Research Motivation</h2>
+          <div class="content has-text-justified">
+            <p>
+              Although large language models (LLMs) have made significant progress in general knowledge and reasoning, 
+              they still show clear shortcomings in long-tail domains such as ACG regarding knowledge mastery and factual QA ability. 
+              Our main motivations for building ACG-SimpleQA are:
+            </p>
+            
+            <h3 class="title is-4">Limitations of Existing Research</h3>
+            <ul>
+              <li>Benchmarks like <a href="https://github.com/OpenStellarTeam/ChineseSimpleQA" target="_blank">ChineseSimpleQA</a> focus on non-long-tail knowledge, resulting in low model differentiation</li>
+              <li>Only a few works, such as <a href="https://github.com/Magnetic2014/RoleEval" target="_blank">RoleEval</a>, specifically target the ACG domain</li>
+            </ul>
+
+            <h3 class="title is-4">Unquantified Real-World Model Differences</h3>
+            <ul>
+              <li>In practice, models like DeepSeek outperform Qwen, GLM, etc., in ACG-related areas</li>
+              <li>No dedicated, public leaderboard exists to quantify and compare mainstream models' performance in ACG</li>
+              <li>Model trainers lack guidance to optimize for this domain</li>
+            </ul>
+
+            <h3 class="title is-4">Data Imbalance Due to Benchmark Gaps</h3>
+            <ul>
+              <li>Without authoritative ACG evaluation, model trainers focus on benchmarks like MMLU, C-Eval, GSM8K, AIME, Codeforces</li>
+              <li>This leads to over-sampling of mainstream domains and neglecting long-tail knowledge</li>
+              <li>Results in models excelling in mainstream areas but performing poorly in ACG and other long-tail domains</li>
+            </ul>
+
+            <h3 class="title is-4">Promoting Diversity and Long-Tail Capability</h3>
+            <ul>
+              <li>ACG-SimpleQA encourages model trainers to increase ACG domain data diversity</li>
+              <li>Helps optimize training token allocation for better coverage</li>
+              <li>Improves models' long-tail knowledge and role-playing abilities</li>
+              <li>Promotes broader application across diverse scenarios</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Citation Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">BibTeX</h2>
+          <div class="content has-text-justified">
+            <pre><code class="language-bibtex">@misc{pka2025acgsimpleqa,
+    title={ACG-SimpleQA},
+    author={Papersnake},
+    howpublished = {\url{https://github.com/prnake/ACG-SimpleQA}},
+    year={2025}
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <a href="https://huggingface.co/datasets/Papersnake/ACG-SimpleQA" target="_blank">ACG-SimpleQA</a> is licensed under MIT License. This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  
+  </body>
+  </html>
