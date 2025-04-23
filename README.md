@@ -68,7 +68,7 @@ ACG-SimpleQA 是一个全面的评估基准，旨在测试大语言模型在二�
 
 ACG-SimpleQA 数据集采用 JSONL 格式存储，每行一个 JSON 对象，包含以下字段：
 
-```json
+```python
 {
   "question": "...", // 问题文本
   "answer": "...", // 标准答案
