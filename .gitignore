@@ -1,0 +1,32 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+dist/
+
+# Testing
+.coverage
+.pytest_cache
+htmlcov
+
+# IDE
+.idea
+.vscode
+
+# System
+.DS_Store
+
+# Python
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+scrapper.egg-info/
+
+# Playwright
+user_data
+user_data_dir
+user_scripts
