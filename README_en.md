@@ -7,7 +7,7 @@
    <a href="README.md">中文</a> | <a href="README_en.md">English</a>
 </p>
 
-**ACG-SimpleQA** is an objective knowledge question-answering dataset focused on the Chinese ACG (Animation, Comic, Game) domain, containing **4242** carefully designed QA samples (not just auto-generated). This benchmark aims to evaluate large language models' factual capabilities in the ACG culture domain, featuring Chinese language, diversity, high quality, static answers, and easy evaluation.
+**ACG-SimpleQA** is an objective knowledge question-answering dataset focused on the Chinese ACG (Animation, Comic, Game) domain, containing **4242** ~~auto-generated~~ carefully designed QA samples. This benchmark aims to evaluate large language models' factual capabilities in the ACG culture domain, featuring Chinese language, diversity, high quality, static answers, and easy evaluation.
 
 ## 📢 Latest Updates
 
@@ -61,7 +61,7 @@ Category distribution in the dataset:
 
 ACG-SimpleQA is stored in JSONL format, one JSON object per line, with the following fields:
 
-```json
+```python
 {
   "question": "...", // Question text
   "answer": "...", // Standard answer
